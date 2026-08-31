@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Pudincity.hu\Commanding</title>
+</head>
+
+<body>
+
+  <!-- KÉP -->
+  <img src="kepek/logo.png" width="300">
+
+  <!-- CÍM -->
+  <h1 style="font-size: 50px; margin-bottom: 5px;">
+    Commanding
+  </h1>
+
+  <!-- Alcím -->
+  <h2 style="font-size: 30px; margin-top: 0; margin-bottom: 10px;">
+    Letöltés:
+  </h2>
+
+  <!-- LETÖLTÉS BLOKK -->
+  <p style="font-family: Arial;">
+    <a href="https://www.mediafire.com/file/kmaxejt2nyey57i/windows_7_Commanding.zip/file" target="_blank">
+      CommWin7 Fullpack
+    </a>
+    <br>
+    <i>(támogatott)</i>
+    <br>
+    <span style="color: red;">Figyelem:</span>
+    <span>Windows 11 korlátozott!</span>
+    <br>
+    Feltöltés dátuma: 2026-IV-11
+  </p>
+
+  <p style="font-family: Arial;">
+    <a href="https://www.mediafire.com/file/cgwqgpbwr22j0fx/Commanding_XPP_8.1_V1.0.0002.0008.zip/file" target="_blank">
+      XPP 8.1 Fullpack
+    </a>
+    <br>
+    <i>(támogatott)</i>  
+    <br>
+    Feltöltés dátuma: 2026-VIII-31
+  </p>
+
+  <h2 style="font-size: 30px; margin-top: 0; margin-bottom: 10px;">
+    Elavult verziók:
+  </h2>
+
+  <p style="font-family: Arial;">
+    <a href="https://www.mediafire.com/file/i0pofe8bn5i6j79/Commanding_XPP_8.1_V1.0.0000.0006.zip/file" target="_blank">
+      XPP 8.1 Fullpack
+    </a>
+    <br>
+    <i>(nem támogatott)</i>
+    <br>
+    Pontos verzió:
+    <i> 1.0.0000.0006</i>
+    <br>
+    Feltöltés dátuma: 2026-V-04
+  </p>
+
+  <h2 style="font-size: 30px; margin-top: 0; margin-bottom: 10px;">
+    Hírek:
+  </h2>
+
+  <p id="hirek">
+    Betöltés...
+  </p>
+
+  <script>
+  fetch("hirek/hirek.txt")
+    .then(response => response.text())
+    .then(szoveg => {
+      document.getElementById("hirek").innerHTML = szoveg.replace(/\n/g, "<br>");
+    })
+    .catch(() => {
+      document.getElementById("hirek").innerHTML = "Nem sikerült betölteni a híreket.";
+    });
+  </script>
+
+  <h2 style="font-size: 30px; margin-top: 0; margin-bottom: 10px;">
+    Csatlakozzon!
+  </h2>
+  <p style="font-family: Consolas;">Csatlakozzon ön is a Commanding fejlesztői közé!
+  <br>A csatlakozáshoz, az alábbi dolgokat kell megtennie:
+  <br>&nbsp- Fel kell vegyük, a Pudingcity csapatába
+  <br><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ez a nehéz rész, mert ehhez rengeteg dolog kell</i>
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;További információ:
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://pastebin.com/raw/vJcP5RQa" target="_blank" style="font-family: Consolas;">
+      www.pudingcity.hu
+      </a>
+  <br>&nbsp;- Jelentkezned kell nálam e-mail-ben:
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://mail.google.com/mail/u/0/#drafts?compose=prDfqbqdnXPnfmJTHzrVcRBXxvPpHTblmMSBXrTDKTDcpmVqKfVzkjDKWlBNhbKQFTSXzBmbwTHwmGGgLFSFrJTtXcqbXgTgpWpzLhTRQFnHGJxthLVtkGSrlNQsMsRZzWRPbLsKnQSXzkMBNGZBHbPq" target="_blank" style="font-family: Consolas;">
+      kecskes.armin.gabriel@gmail.com
+      </a>
+  <br>&nbsp;- El kell jöjj hozzám, és ki kell töltened egy tesztet.
+  <br>&nbsp;- Ezután meg kell írj egy python kódot.
+  <br>&nbsp;- Ha ez eléri a 70 pontot, akkor már csak pár
+  <br>&nbsp;&nbsp;&nbsp;lépés választ el attól hogy csatlakozz.
+  <br>Csatlakozz, és gyere feljeszteni!
+  <br>A fejlesztéshez az alábbi dolgokra lesz szükséged:
+  <br>&nbsp;- Alap szintű Python tudás
+  <br>&nbsp;- Sok türelem
+  <br>&nbsp;- Kitartás
+  <br>&nbsp;- Sok türelem
+  <br>&nbsp;- Alacsony szintű C tudás
+  <br>&nbsp;- Sok türelem
+  <br>&nbsp;- Alacsony szintű JavaScript tudás
+  <br>&nbsp;- A sok türelmet mondtam már?
+
+</body>
+</html>
