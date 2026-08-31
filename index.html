@@ -62,25 +62,6 @@
   </p>
 
   <h2 style="font-size: 30px; margin-top: 0; margin-bottom: 10px;">
-    Hírek:
-  </h2>
-
-  <p id="hirek">
-    Betöltés...
-  </p>
-
-  <script>
-  fetch("hirek/hirek.txt")
-    .then(response => response.text())
-    .then(szoveg => {
-      document.getElementById("hirek").innerHTML = szoveg.replace(/\n/g, "<br>");
-    })
-    .catch(() => {
-      document.getElementById("hirek").innerHTML = "Nem sikerült betölteni a híreket.";
-    });
-  </script>
-
-  <h2 style="font-size: 30px; margin-top: 0; margin-bottom: 10px;">
     Csatlakozzon!
   </h2>
   <p style="font-family: Consolas;">Csatlakozzon ön is a Commanding fejlesztői közé!
